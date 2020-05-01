@@ -117,19 +117,11 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     });
   }
   
-
-  
- /* function instructions(agent, id) {
-      agent.add(id);
-    } 
- */
-  
   let intentMap = new Map();
   intentMap.set('Default Welcome Intent', welcome);
   intentMap.set('Default Fallback Intent', fallback);
   intentMap.set('Ingredients', IngredientsHandler);
   intentMap.set('Recipe', RecipeHandler);
   intentMap.set('followUp', followUp);
-  //intentMap.set('Instructions', instructions);
   agent.handleRequest(intentMap);
 });
