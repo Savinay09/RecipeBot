@@ -95,7 +95,6 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
   function followUp(agent) {
     const id = agent.parameters.id;
     const API_KEY = "24e3e8dad0be44d6a09d8c63f72dcb4f";
-    console.log(id);
     let steps = "";
     let steps2 = "";
     return axios.get(`https://api.spoonacular.com/recipes/${id}/analyzedInstructions?apiKey=${API_KEY}`)
@@ -103,17 +102,19 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
       console.log(JSON.stringify(result.data));
       result.data.map(Obj => {
       Object.values(Obj.steps).map(stepsObj => {
-        	if(steps.length < 400) {
+        	if(steps.length < 640) {
         		steps += "Step" + stepsObj.number + " :  " + stepsObj.step.replace(" F ", "Fahrenheit") + "..      	 ";
-            	console.log(steps);
-            } else {
+            } else if(steps2.length < 640) {
                 steps2 += "Step" + stepsObj.number + " :  " + stepsObj.step.replace(" F ", "Fahrenheit") + "..      	 ";
-            	console.log(steps2);
             }
         });   
       });
+      console.log(steps);
+      console.log(steps2);
       agent.add(steps);
-      agent.add(steps2);
+      if (steps2 != "") {
+      	agent.add(steps2);
+      }
     });
   }
   
