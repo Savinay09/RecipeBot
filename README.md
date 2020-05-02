@@ -11,3 +11,7 @@ Please email us with any questions on how to run this chatbot:
 savinay@berkeley.edu
 shreyash2106@berkeley.edu
 pranavsukumar@berkeley.edu
+
+If you want to interact with the bot on Google Assistant, please go to DialogFlow and sign in with this email: 
+Login: foodbotassistant@gmail.com
+P/W: foodbot2020
