@@ -7,7 +7,7 @@ To build our agent, we first defined and mapped Dialogflow intents and follow up
 We have attached the index.js, package.json, and CSV training data file needed to build our chatbot in Dialogflow. 
 
 Please email us with any questions on how to run this chatbot:
-savinay@berkeley.edu
+savinay@berkeley.edu,
 shreyash2106@berkeley.edu
 pranavsukumar@berkeley.edu 
 
