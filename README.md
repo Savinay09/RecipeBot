@@ -14,4 +14,4 @@ pranavsukumar@berkeley.edu
 
 If you want to interact with the bot on Google Assistant, please go to DialogFlow and sign in with this email: 
 Login: foodbotassistant@gmail.com
-P/W: foodbot2020
+$$\n$$ P/W: foodbot2020
