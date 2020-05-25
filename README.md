@@ -8,9 +8,9 @@ We have attached the index.js, package.json, and CSV training data file needed t
 
 Please email us with any questions on how to run this chatbot:
 
-savinay@berkeley.edu
+<br> savinay@berkeley.edu
 shreyash2106@berkeley.edu
-pranavsukumar@berkeley.edu
+pranavsukumar@berkeley.edu <br />
 
 If you want to interact with the bot on Google Assistant, please go to DialogFlow and sign in with this email: 
 <br> Login: foodbotassistant@gmail.com <br /> 
