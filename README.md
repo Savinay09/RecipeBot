@@ -13,6 +13,6 @@ pranavsukumar@berkeley.edu
 
 To use the bot, please visit the following link: https://recipe-bot.netlify.app/
 
-If you want to interact with the bot on Google Assistant, please go to DialogFlow and sign in with this email: 
+If you want to interact with the bot in Google Assistant, please go to DialogFlow and sign in with this email: 
 <br> Login: foodbotassistant@gmail.com <br /> 
 P/W: foodbot2020 
