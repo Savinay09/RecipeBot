@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="nav">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html"><img  src="../images/chef_bot.jpeg" height="70"  width="70"></a>
+                </div>
+                <div id="mainListDiv" class="main_list">
+                    <ul class="navlinks">
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="#">Vision</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <span class="navTrigger">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </span>
+            </div>
+        </nav>
+    
+        <section class="home">
+        </section>
+        <div style="height: 1000px">
+                <u><h1 class="myH2">RecipeBot Chatbot</h1> </u> 
+                <p class="myP"> 
+                    After realizing that so many household food ingredients are wasted, we looked at potential ways to address this issue. Our initial plan was to build a web application using a GCP backend to store recipes for efficient access. Midway through our implementation, however, we understood that it would not be feasible to use a web app while in the midst of cooking. 
+                    <br>After reaching out to relatives and soup kitchens, we decided to pivot and build a chatbot instead. This shift was driven by our desire to simplify and streamline the user experience. Utilizing a hands-free platform like Google Home or Alexa would be perfect in this regard. Since upwards of 70% of all smartphones run on the Android platform, we decided to use Dialogflow to build our chatbot.
+                    <br> To build our agent, we first defined and mapped Dialogflow intents and follow up intents for welcoming the user, collecting the ingredients, recommending the top recipes, listing missing ingredients, and reading out the final recipe. We enabled webhook calling for each intent so that we could use Fulfillment to generate a dynamic response to the users queries. We also defined Entities for the dish, dish ID, ingredient, and quantity so that we could extract useful data from queries. In order to train the NLP entity algorithms, we created and formatted a CSV file containing two columns of ingredient data. To recommend a recipe to the user after receiving a list of ingredients, we made a call to the Spoonacular API. We made calls to the API to find a recipe from ingredients, and display the instructions for making a recipe from a recipe ID. The API finds recipes that use as many of the given ingredients as possible and require as few additional ingredients as possible.           
+                </p>
+        </div>
+        <p>
+            <script type="text/javascript">
+             /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+             (function(d, m){
+               var kommunicateSettings = {"appId":"20ece076d7172b29030c0132a17c3ac70","popupWidget":true,"automaticChatOpenOnNavigation":true};
+               var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+               s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+               var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+               window.kommunicate = m; m._globals = kommunicateSettings;
+             })(document, window.kommunicate || {});
+         </script> 
+
+
+         <script type="text/javascript"> 
+             var popUpWindow;
+             function popup(n) {
+                popUpWindow = window.open(n);
+             }
+                 function display(obj){
+                     popUpWindow.document.write('<iframe height="450" allow="microphone;" allowTransparency="true" frameborder="0" scrolling="yes" style="width:100%;" src="https://console.dialogflow.com/api-client/demo/embedded/RecipeBot" type= "text/javascript"></iframe>');
+                 } 
+         </script>
+         
+         <a href="#" onclick="popup('popUpDiv');
+             display(this);">
+             <img  src="../images/chef_bot.jpeg" id = "bot" height="70"  width="70">
+         </a>
+         <img  src="../images/try.png"  class="image-border2" height="150"  width="250">
+     </p>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="../js/scripts.js"></script>
+    
+        <script>
+            $(window).scroll(function() {
+                if ($(document).scrollTop() > 50) {
+                    $('.nav').addClass('affix');
+                    console.log("OK");
+                } else {
+                    $('.nav').removeClass('affix');
+                }
+            });
+        </script>    
+    </body>
+</html>
