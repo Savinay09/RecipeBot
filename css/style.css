@@ -383,3 +383,44 @@ body {
     margin-top: -7.3cm;
     margin-left: 43.3cm;
 }
+
+.dish{
+    margin-top: -30cm;
+    margin-bottom: 11cm;
+    margin-left: 7cm;
+}
+
+#dish1{
+    text-align: justify;
+	padding-left:12%;
+    padding-right:15%;
+    margin-top: -10.5cm;
+	font-size: 20px;
+}
+
+.dish2{
+    margin-top: -25cm;
+    margin-bottom: 1.4cm;
+    margin-left: 21.3cm;
+}
+
+#dish2{
+    text-align: justify;
+	padding-left:41.3%;
+    padding-right:15%;
+    margin-top: -1cm;
+	font-size: 20px;
+}
+
+.dish3{
+    margin-top: -23cm;
+    margin-bottom: 2cm;
+    margin-left: 35cm;
+}
+
+#dish3{
+    text-align: justify;
+	padding-left:69.9%;
+    margin-top: -1.7cm;
+	font-size: 20px;
+}
