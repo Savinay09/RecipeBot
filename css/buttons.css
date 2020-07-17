@@ -1,0 +1,113 @@
+body {
+    background: rgb(160, 223, 219);
+}
+h1 {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    color: #fff;
+    font-size: 50px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+div.social-btn {
+    display: block;
+    width: 665px;
+    margin: 0 auto;
+    text-align: center;
+}
+div.social-btn a {
+    text-decoration: none;
+}
+div.social-btn div {
+    width: 130px;
+    display: inline-block;
+    float: left;
+    height: 120px;
+    line-height: 120px;
+    color: #fff;
+    margin-right: 3px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+    text-shadow:0px 0px 5px #000;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    margin-bottom: 50px;
+}
+div.social-btn a:last-child div {
+    margin-right: 0;
+}
+div.social-btn div:hover, div.social-btn div:active {
+    height: 135px;
+    padding-top: 15px;
+}
+i {
+    -moz-transition: all 0.4s ease-out;
+    -webkit-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+}
+div.face span, div.twi span, div.in span, div.pin span, div.git span{
+    position: absolute;
+    left: 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    width: 100px;
+    padding: 0px 15px;
+    opacity: 0;
+    -moz-transition: all 0.6s ease-in;
+    -o-transition: all 0.6s ease-in;
+    -webkit-transition: all 0.6s ease-in;
+    transition: all 0.6s ease-in;
+    line-height: 110px;
+    font-size: 20px;
+}
+div.social-btn div:hover i  {
+    opacity: 0;
+}
+div.social-btn div:hover span {
+    opacity: 1;
+}
+div.face {
+    background: #3A5795;
+    -webkit-box-shadow: 0px 4px 0px #ffffff;
+    -moz-box-shadow: 0px 4px 0px #ffffff;
+    box-shadow: 0px 4px 0px #fffefe;
+    position: relative;
+}
+
+div.twi {
+    background: #5EA9DD;
+    -webkit-box-shadow: 0px 4px 0px #ffffff;
+    -moz-box-shadow: 0px 4px 0px #ffffff;
+    box-shadow: 0px 4px 0px #fffefe;
+    position: relative;
+}
+div.in {
+    background: #0177B5;
+    -webkit-box-shadow: 0px 4px 0px #ffffff;
+    -moz-box-shadow: 0px 4px 0px #ffffff;
+    box-shadow: 0px 4px 0px #fffefe;
+    position: relative;
+}
+div.pin {
+    background: rgb(241, 78, 78);
+    -webkit-box-shadow: 0px 4px 0px #ffffff;
+    -moz-box-shadow: 0px 4px 0px #ffffff;
+    box-shadow: 0px 4px 0px #fffefe;
+    position: relative;
+}
+div.git {
+    background: rgb(0, 0, 0);
+    -webkit-box-shadow: 0px 4px 0px #ffffff;
+    -moz-box-shadow: 0px 4px 0px #ffffff;
+    box-shadow: 0px 4px 0px #fffefe;
+    position: relative;
+}
+div.git i {
+    text-shadow: none;
+}
