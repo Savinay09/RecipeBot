@@ -8,17 +8,18 @@
         <link href="css/page.css" rel="stylesheet">
         <link href="css/buttons.css" rel="stylesheet">
         <meta charset="UTF-8">
-        <title>Beauty Social BTN</title>
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <link href='https://fonts.googleapis.com/css?family=Raleway:100,400' rel='stylesheet' type='text/css'>
        
         <link rel="stylesheet" href="css/buttons.css">
     </head>
     <body>
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0" nonce="HCqgeU2L"></script> 
         <nav class="nav">
             <div class="container">
                 <div class="logo">
-                    <a href="index.html"><img  src="images/chef_bot.jpeg" height="70"  width="70"></a>
+                    <a href="index.html"><img  src="images/chef_bot.jpeg" height="65"  width="65"></a>
                 </div>
                 <div id="mainListDiv" class="main_list">
                     <ul class="navlinks">
@@ -38,42 +39,55 @@
         <section class="home">
         </section>
         <div style="height: 1000px">
-                <u><b><h1 class="myH2">RecipeBot Chatbot</h1> </b> </u> 
+                <b><h1 class="myH2">RecipeBot Chatbot</h1> </b> 
                 <p class="myP"> 
-                    After realizing that so many household food ingredients are wasted, we looked at potential ways to address this issue. 
+                    After realizing that so many household food ingredients are wasted every day, we looked at potential ways to address this issue. 
+                    <div class="myP"> (Check out our <a href="html/vision.html">Vision</a> for more info on the food waste problems we are facing) </div>
                     <p class="myP"> 
-                        After reaching out to relatives and soup kitchens, we decided to build a chatbot. 
-                    This idea was driven by our desire to simplify and streamline the user experience for getting recipes from scrap ingredients. 
-                    Utilizing a hands-free platform like Google Home or Alexa would be perfect in this regard. 
+                        We reached out to our relatives and soup kitchens, and based on their feedback, we decided to build a chatbot. 
+                    The idea was driven by our desire to simplify and streamline the user experience for getting recipes from scrap ingredients you may have at home. 
                     Since upwards of 70% of all smartphones run on the Android platform, we decided to use Dialogflow to build our chatbot.
                     </p>
-                    <div class="myP"> (Check out our <a href="html/vision.html">Vision </a>for more info on the food waste problems we are facing) </div>
+                    
                 </p>
+                <br>
+                <div class="myP" style="font-size: 35px; margin-bottom: 3em;"> 
+                    <u>SAMPLE RECIPES:  </u>
+                </div>
+                
         </div>
-        <div>
-            <a href="html/chicken_parm.html"> <img  src="images/chicken_parm.jpeg" class="dish" height="300"  width="300" style="border-radius: 50%;"> </a>
-            <div class="myP" id="dish1"> <u>Chicken Parmesan(Click for instructions)</u></div>
+        
+        <div style="padding-top: 20em; margin-bottom: -4.5cm;">
+            <a href="html/chicken_parm.html"> <img  src="images/chicken_parm.jpeg" class="dish" height="300"  width="400"> </a>
+            <div class="myP" id="dish1"> Chicken Parmesan</div>
 
-            <a href="html/cake.html"> <img  src="images/cake.jpg" class="dish2" height="300"  width="300" style="border-radius: 50%;"> </a>
+            <a href="html/cake.html"> <img  src="images/cake.jpg" class="dish2" height="300"  width="400"> </a>
             <div class="myP" id="dish2"> 
-                <u>Peanut Butter Chocolate Banana Cake
-                <br> <div style="padding-left: 4em;">(Click for instructions) </div>
-                </u>
+                Peanut Butter Chocolate 
+                <br style="margin-left: 4cm;"> Banana Cake
+                
+                
             </div>
 
-            <a href="html/pie.html"> <img  src="images/pie.jpg" class="dish3" height="300"  width="300" style="border-radius: 50%;"> </a>
+            <a href="html/pie.html"> <img  src="images/pie.jpg" class="dish3" height="300"  width="400" > </a>
             <div class="myP" id="dish3"> 
-                <u>Apple Pie(Click for instructions)</u>
+                Apple Pie
             </div>
 
         </div>
-        <div class="social-btn">
-            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Frecipe-bot.netlify.app%2F&amp;src=sdkpreparse" target="_blank"><div class="social face"><i class="fa fa-facebook fa-2x"></i><span>Facebook</span></div></a>
+        <div class="social-btn" style="margin-right: 14cm;">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Frecipe-bot.netlify.app%2F&amp;src=sdkpreparse" target="_blank" class="fb-xfbml-parse-ignore"><div class="social face"><i class="fa fa-facebook fa-2x"></i><span>Facebook</span></div></a>
             <a target="_blank"><div class="social in"><i class="fa fa-linkedin  fa-2x"></i><span>
                 <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
                 <script type="IN/Share" data-url="https://recipe-bot.netlify.app"></script>
                 LinkedIn</span></div></a>
-            <a href="#" target="_blank"><div class="social pin"><i class="fa fa-instagram fa-2x"></i><span>Instagram</span></div></a>
+            <a href="https://twitter.com/intent/tweet?text=Hey%20everyone! Please look at this amazing website that incorporates a chatbot to help you find awesome recipes using scrap ingredients you have in your kitchen. https://recipe-bot.netlify.app" 
+            target="_blank">
+                <div class="social pin">
+                    <i class="fa fa-twitter fa-2x"></i>
+                    <span>Twitter</span>
+                </div>
+            </a>
             <a href="https://github.com/Savinay09/RecipeBot" target="_blank"><div class="social git"><i class="fa fa-github fa-2x"></i><span>GitHub</span></div></a>
         </div>
         <p>
@@ -85,10 +99,10 @@
                var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
                window.kommunicate = m; m._globals = kommunicateSettings;
              })(document, window.kommunicate || {});
-         </script> 
+            </script> 
 
 
-         <script type="text/javascript"> 
+        <!--  <script type="text/javascript"> 
              var popUpWindow;
              function popup(n) {
                 popUpWindow = window.open(n);
@@ -101,8 +115,8 @@
          <a href="#" onclick="popup('popUpDiv');
              display(this);">
              <img  src="images/chef_bot.jpeg" id = "bot" height="70"  width="70">
-         </a>
-         <img  src="images/try.png"  class="image-border2" height="150"  width="250">
+         </a> 
+         <img  src="images/try.png"  class="image-border2" height="150"  width="250"> -->
      </p>
      
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>

@@ -19,54 +19,57 @@
 #bot {
     position: absolute;
     box-shadow: 0px 0px 0px 5px #000, 0px 0px 0px 10px #fff, 0px 0px 0px 15px #000000;
-    margin-top: 1.35cm;
-    margin-left: 11cm;
+    margin-top: 1.5cm;
+    margin-left: 14cm;
 }
 
 .image-border2 { 
     position: absolute;
     box-shadow: 0px 0px 0px 2.5px #000, 0px 0px 0px 5px #fff, 0px 0px 0px 10px #000000;
     margin-top: -3.7cm;
-    margin-left: 9.3cm;
+    margin-left: 12.7cm;
 }
 
 .dish{
     margin-top: -30cm;
-    margin-bottom: 11cm;
+    margin-bottom: 11.2cm;
     margin-left: 7cm;
+    box-shadow: 0px 0px 0px 2.5px #000, 0px 0px 0px 5px #fff, 0px 0px 0px 10px #000000;
 }
 
 #dish1{
     text-align: justify;
-	padding-left:12%;
+	padding-left:16.5%;
     padding-right:15%;
-    margin-top: -10.5cm;
-	font-size: 20px;
+    margin-top: -10.8cm;
+	font-size: 35px;
 }
 
 .dish2{
     margin-top: -25cm;
-    margin-bottom: 1.4cm;
+    margin-bottom: 1.9cm;
     margin-left: 21.3cm;
+    box-shadow: 0px 0px 0px 2.5px #000, 0px 0px 0px 5px #fff, 0px 0px 0px 10px #000000;
 }
 
 #dish2{
     text-align: justify;
-	padding-left:41.3%;
+	padding-left:42.3%;
     padding-right:15%;
-    margin-top: -1cm;
-	font-size: 20px;
+    margin-top: -1.4cm;
+	font-size: 35px;
 }
 
 .dish3{
     margin-top: -23cm;
-    margin-bottom: 2cm;
+    margin-bottom: 3.18cm;
     margin-left: 35cm;
+    box-shadow: 0px 0px 0px 2.5px #000, 0px 0px 0px 5px #fff, 0px 0px 0px 10px #000000;
 }
 
 #dish3{
     text-align: justify;
-	padding-left:69.9%;
-    margin-top: -1.7cm;
-	font-size: 20px;
+	padding-left:75.5%;
+    margin-top: -2.6cm;
+	font-size: 35px;
 }
