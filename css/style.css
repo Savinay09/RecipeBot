@@ -15,6 +15,7 @@ body {
     position: fixed;
     line-height: 65px;
     text-align: center;
+    background-color: black;
 }
 
 .nav div.logo {
