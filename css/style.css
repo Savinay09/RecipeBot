@@ -15,7 +15,9 @@ body {
     position: fixed;
     line-height: 65px;
     text-align: center;
-    background-color: black;
+    background-color: rgba(0, 0, 0, .5);
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .nav div.logo {
@@ -84,8 +86,9 @@ body {
 }
 
 .nav {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
 }
