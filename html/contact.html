@@ -6,28 +6,65 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="../css/style.css" rel="stylesheet">
         <link href="../css/page.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="../js/scripts.js"></script>
     </head>
     <body>
-        <p class="myP" id="contact"> 
-           <u>Please email us with any questions on how to run this chatbot:  </u>
-            <br> <a href = "mailto: savinay@berkeley.edu">savinay@berkeley.edu</a>
-            <br> <a href = "mailto: shreyash2106@berkeley.edu">shreyash2106@berkeley.edu</a>
-            <br> <a href = "mailto: spranavsukumar@berkeley.edu">pranavsukumar@berkeley.edu</a> 
-            <a href="../index.html">   
-                    <img  src="../images/chef_bot.jpeg"  class="image-border" height="150"  width="150">                   
-            </a>  
-            <div class="myP" id="home"><u><b>Go back to Home Page</b> </u></div>     
-        </p>
+        <nav class="nav">
+            <div class="container" style="margin-bottom: 1cm;">
+                <div class="logo">
+                    <a href="../index.html"><img  src="../images/chef_bot.jpeg" height="65"  width="65"></a>
+                </div>
+                <div id="mainListDiv" class="main_list">
+                    <ul class="navlinks">
+                        <li><a href="../index.html">About</a></li>
+                        <li><a href="vision.html">Vision</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <span class="navTrigger">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </span>
+            </div>
+            
+           <p>
+            <div class="typeform-widget" data-url="https://form.typeform.com/to/zNiXAhkN" style="width: 100%; height: 900px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=zNiXAhkN&utm_source=typeform.com-01EDKKQE78Y8BJCCWCAVJ7NYCR-free&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN" style="color: #999" target="_blank">Typeform</a> </div>           </p>
+            
+            
+    
+        </nav>
+        
     </body>
+
+    <script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>    
+
     <style>
-         body{
-            background-color:white;
-         }
-         #home{
-            padding-top: 5.4cm;
-            margin-left: 14cm; 
-            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            font-size: 35px;
-         }
+        .home {
+            width: 100%;
+            height: 100vh;
+            background-image: none;
+            background-position: center top;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .nav div.main_list ul li a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            line-height: 65px;
+            font-size: 2.4rem;
+        }
+       
+
     </style>
 </html>
