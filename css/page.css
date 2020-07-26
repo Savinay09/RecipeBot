@@ -10,10 +10,8 @@
 }
 
 .image-border { 
-    position: absolute;
     box-shadow: 0px 0px 0px 2.5px #000, 0px 0px 0px 5px #fff, 0px 0px 0px 10px #000000;
     margin-top: 3cm;
-    margin-left: -8cm;
 }
 
 #bot {
@@ -72,4 +70,8 @@
 	padding-left:75.5%;
     margin-top: -2.6cm;
 	font-size: 35px;
+}
+
+.col{
+    width: 100%;
 }
