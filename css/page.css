@@ -75,3 +75,7 @@
 .col{
     width: 100%;
 }
+
+iframe{
+    padding: 100px;
+}
